@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="History Quiz aims at testing the user knowledge on global history facts">
+  <meta name="keywords" content="history, quizz, middle ages, antiquity, global facts, politics, contemporary">
+  <meta name="author" content="Edna Torres Munill">
+  <!--My stylesheet-->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <!--Favicon-->
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./assets/favicon/site.webmanifest">
+  <!--Fontawesome-->
+  <script src="https://kit.fontawesome.com/19349c9d8e.js" crossorigin="anonymous"></script>
+
+
+  <title>QUIZ | History Facts</title>
+</head>
+
+<body class="bgDarkMode" id="index">
+
+  <!-- NAVBAR -->
+  <nav id="navIndex">
+    <a href="./index.html" aria-label="return to landing page">
+      <img id="logo" src="./assets/images/logo.png"
+        srcset="https://ethra8.github.io/history-quiz/assets/images/logo.png" alt="logo">
+      <p>Quiz</p>
+    </a>
+    <input type="checkbox" name="menuToggle" id="menuToggle">
+    <label for="menuToggle">
+      <span class="toggle">
+        <a class="show_mobile" href="./index.html" aria-label="return to landing page">
+          <img id="logo1" src="./assets/images/logo.png"
+            srcset="https://ethra8.github.io/history-quiz/assets/images/logo.png" alt="logo">
+        </a>
+        <span id="list_symbol"><i class="fa fa-bars fa-2x"></i></span>
+      </span>
+    </label>
+    <!--the menu that will slide in from the left-->
+    <ul id="menu" class="menu nav_item">
+      <li>
+        <div>
+          <span id="settings">
+            <i class="fa fa-circle-half-stroke switchModesIcon"></i>
+            <label class="switch">
+              <input id="switchMode" type="checkbox" checked>
+              <span class="slider round"></span>
+            </label>
+            <!-- <i class="fa fa-moon sunMoonIcons"></i> -->
+            <i class="fa fa-volume-high" id="fa-play"></i>
+            <i class="fa fa-volume-xmark" id="fa-pause"></i>
+          </span>
+        </div>
+      </li>
+      <li>
+        <button id="navRestartBtn">Restart Quiz</button>
+      </li>
+    </ul>
+  </nav>
+
+
+  <!-- <audio src="./assets/media/music.mp3" controls loop id="music.mp3">
+
+  </audio>
+ -->
+  <header>
+    <noscript>
+      <h2>This quiz is coded with JavaScript. <br>
+        Please enable JavaScript to start the quiz.</h2>
+      <p><a href="https://www.google.com/search?q=enable+javascript" target="_blank" rel="noopener noreferrer">Here</a>
+        you can google how to enable it on your browser</p>
+    </noscript>
+
+    <h1>History Facts</h1>
+    <p>Quiz</p>
+
+  </header>
+
+  <div class="startQuiz">
+    <button id="startQuizBtn">Start Quiz</button>
+  </div>
+
+  <div id="questionSet">
+    <div id="question"></div>
+
+    <div class="count">
+      <p>correct answers: <span id="correct">0</span></p>
+
+      <p>incorrect answers: <span id="incorrect">0</span></p>
+    </div>
+
+  </div>
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+
+
+    </div>
+
+  </div>
+
+  <footer>
+
+    <!-- Unordered List to Social Media external sites-->
+    <div class="social_media">
+      <div>
+        <p><a title="Go to our Instagram page in a new tab" href="https://www.instagram.com/" target="_blank"
+            rel="noopener" aria-label="go to our Instagram page in a new tab"><i class="fab fa-instagram"></i></a>
+          <a title="Go to our Twitter page in a new tab" href="https://www.twitter.com/" target="_blank" rel="noopener"
+            aria-label="go to our Twitter page in a new tab"><i class="fab fa-twitter"></i></a>
+        </p>
+      </div>
+      <div>
+        <p><a title="Go to our Facebook page in a new tab" href="https://www.facebook.com/" target="_blank"
+            rel="noopener" aria-label="go to our Facebook page in a new tab"><i class="fab fa-facebook-f"></i></a>
+          <a title="click here to send us an email right away by opening your mailing app"
+            href="mailto:info@historyquiz.com" target="_blank" rel="noopener"
+            aria-label="click here to send us an email right away by opening your mailing app"><i
+              class="fa fa-envelope"></i></a>
+        </p>
+      </div>
+    </div>
+
+  </footer>
+
+  <script src="./assets/js/script.js"></script>
+
+</body>
+
+</html>
